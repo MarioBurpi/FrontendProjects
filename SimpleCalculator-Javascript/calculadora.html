@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+
+    <div class="div-title">
+        <h1>Simple JavaScript Calculator</h1>
+        <hr>
+        <h2>Coded entirely by Mario Burgos from team Click||Tap Developers</h2>
+
+    </div>
+
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" name="display" id="display" size="19"></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td><input type="button" name="btn-7" class="button" id="btn-7" value="7" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-8" class="button" id="btn-8" value="8" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-9" class="button" id="btn-9" value="9" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-div" class="button" id="btn-div" value="/" onclick="division();"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btn-4" class="button" id="btn-4" value="4" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-5" class="button" id="btn-5" value="5" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-6" class="button" id="btn-6" value="6" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-mul" class="button" id="btn-mul" value="X" onclick="multiplication();"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btn-1" class="button" id="btn-1" value="1" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-2" class="button" id="btn-2" value="2" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-3" class="button" id="btn-3" value="3" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-sus" class="button" id="btn-sus" value="-" onclick="substraction();"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="btn-dot" class="button" id="btn-dot" value="."></td>
+            <td><input type="button" name="btn-0" class="button" id="btn-0" value="0" onclick="displayNumbers(value);"></td>
+            <td><input type="button" name="btn-eq" class="button" id="btn-eq" value="=" onclick="equals();"></td>
+            <td><input type="button" name="btn-add" class="button" id="btn-add" value="+" onclick="addition();"></td>
+        </tr>
+    </table>
+
+</body>
+
+
+<script type="text/javascript" src="./calculadora-funcionalidad.js"></script>
+
+</html>
