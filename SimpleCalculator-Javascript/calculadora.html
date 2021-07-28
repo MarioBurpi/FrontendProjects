@@ -13,18 +13,22 @@
 <body>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
 
-    <div class="div-title">
+    <header>
         <h1>Simple JavaScript Calculator</h1>
         <hr>
-        <h2>Coded entirely by Mario Burgos from team Click||Tap Developers</h2>
-
-    </div>
+        <h2>Coded by Mario Burgos</h2>
+        <br>
+    </header>
 
     <table>
         <tr>
-            <td colspan="4"><input type="text" name="display" id="display" size="19"></td>
+            <td colspan="4"><input type="text" name="display" id="display" size="19" value=0></td>
         </tr>
         <tr>
+            <td><input type="button" name="btn-ac" class="button" id="btn-ac" value="AC" onclick="resetAC();"></td>
+            <td><input type="button" name="btn-c" class="button" id="btn-c" value="C" onclick="resetC();"></td>
+            <td><input type="button" name="btn-%" class="button" id="btn-per" value="&#37;" onclick="percentage();"></td>
+            <td><input type="button" name="btn-sqr" class="button" id="btn-sqr" value="&Sqrt;" onclick="squareRoot();"></td>
         </tr>
         <tr>
             <td><input type="button" name="btn-7" class="button" id="btn-7" value="7" onclick="displayNumbers(value);"></td>
@@ -51,6 +55,11 @@
             <td><input type="button" name="btn-add" class="button" id="btn-add" value="+" onclick="addition();"></td>
         </tr>
     </table>
+
+    <footer>
+        <hr>
+        <p>Mario Burgos. 2021</p>
+    </footer>
 
 </body>
 
